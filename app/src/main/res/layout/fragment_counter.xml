@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    tools:context=".presentation.view.activity.threads.AsyncTaskActivity">
+
+    <LinearLayout android:id="@+id/btnsContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtvFullScreenCounterStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Comment"
+        android:scaleType="center"
+        android:layout_below="@+id/btnsContainer"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
+

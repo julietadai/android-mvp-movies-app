@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/svFragmentContent"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".presentation.view.fragment.details.MovieDetailsFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragmentMoviesDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgCoverMovie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imgCoverSize"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="@dimen/spacing_xl"
+            android:src="@mipmap/img_avangerscover" />
+
+        <ImageButton
+            android:id="@+id/btnDownload"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/spacing_s"
+            android:layout_alignBottom="@+id/imgCoverMovie"
+            android:background="@drawable/btn_download_selector"
+            android:src="@android:drawable/stat_sys_download" />
+
+        <ImageView
+            android:id="@+id/imgProfileMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCoverMovie"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitStart"
+            android:layout_marginRight="@dimen/spacing_s"
+            android:layout_marginBottom="@dimen/spacing_m"
+            android:src="@mipmap/img_avengersprofile" />
+
+        <TextView
+            android:id="@+id/txtvMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCoverMovie"
+            android:layout_toRightOf="@id/imgProfileMovie"
+            android:textStyle="bold"
+            android:textColor="@color/purple"
+            android:textAlignment="gravity"
+            android:textSize="@dimen/textTitleSize"
+            android:text="@string/movie_name"/>
+
+        <TextView
+            android:id="@+id/txtvMovieReleasedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtvMovieTitle"
+            android:layout_toRightOf="@id/imgProfileMovie"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSubTitleSize"
+            android:textColor="@color/black"
+            android:textAlignment="gravity"
+            android:text="@string/movie_releasedDate"/>
+
+        <Button
+            android:id="@+id/btnMovieTrailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtvMovieReleasedDate"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:layout_toRightOf="@id/imgProfileMovie"
+            android:text="@string/btn_movie_trailer"/>
+
+        <TextView
+            android:id="@+id/txtvOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:text="Overview:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSubTitleSize"
+            android:textStyle="bold"
+            android:layout_below="@id/imgProfileMovie" />
+
+        <TextView
+            android:id="@+id/txtvMovieDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtvOverview"
+            android:gravity="start"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textOverviewSize"
+            android:text="@string/txt_movie_overview" />
+
+    </RelativeLayout>
+
+</ScrollView>

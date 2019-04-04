@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".movieslist.MoviesActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_reload"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_cloud_download_black_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_delete"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_delete_forever_black_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionAsyncTask"
+        android:title="Open Async Task Activity"></item>
+
+    <item
+        android:id="@+id/actionThreadHandler"
+        android:title="Open Thread Handler Activity"></item>
+
+</menu>

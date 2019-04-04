@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_xl">16dp</dimen>
+    <dimen name="spacing_m">8dp</dimen>
+    <dimen name="spacing_s">4dp</dimen>
+
+    <dimen name="itemMovieHeight">108dp</dimen>
+
+    <dimen name="imgCoverSize">200dp</dimen>
+    <dimen name="textTitleSize">19sp</dimen>
+    <dimen name="textSubTitleSize">16sp</dimen>
+    <dimen name="textOverviewSize">14sp</dimen>
+
+</resources>
