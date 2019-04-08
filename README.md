@@ -13,7 +13,7 @@
 
 3. **Presentation layer**: It contains Activities, Fragments and views, which will only handle rendering views and will follow MVP pattern.
 
-#### App that using the library libraries:
+#### Used libraries:
 1. [Retrofit](https://github.com/square/retrofit)
 2. [Gson](https://github.com/google/gson)
 3. [Picasso](https://github.com/square/picasso)
@@ -23,11 +23,14 @@
 - [themoviedb](https://www.themoviedb.org) - A database for movies and TV shows.
 
 
-# Screenshot 
-<p align="center">>
-<img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/julietadai/android-mvp-movies-app/blob/master/movieTrailersDemo.gif" width="332" height="666">
+# Demo screenshot 
+<p align="center">
+<img style="-webkit-user-select: none;cursor: zoom-in;" src="https://github.com/julietadai/android-mvp-movies-app/blob/master/movieTrailersDemo.gif" width="332" height="666" />
 </p>
 
+## Contributing
+If you want to contribute to this project check if there are any open issues 
+or just send a pull request and I'll do my best to look at it
 
 ### License
 ```
