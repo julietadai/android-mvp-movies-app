@@ -30,11 +30,9 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 
-    //Add Retrofit library
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
-
-    //Add Gson
-    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    //Networking
+    implementation "com.squareup.retrofit2:retrofit:$version_retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$version_retrofit"
 
     //Add picasso
     implementation 'com.squareup.picasso:picasso:2.71828'

@@ -22,6 +22,10 @@ allprojects {
     }
 }
 
+ext {
+    version_retrofit = '2.4.0'
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
