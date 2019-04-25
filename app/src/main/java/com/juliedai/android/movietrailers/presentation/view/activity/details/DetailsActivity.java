@@ -16,9 +16,10 @@ import java.util.List;
 
 /**
  * @author  Julie Dai
+ * Activity that contains all the details about specific movie
  */
 
-public class DetailsActivity extends AppCompatActivity implements Contract.View{
+public class DetailsActivity extends AppCompatActivity implements Contract.View {
     private static final String LOG_TAG = "_DetailsActivity_";
     public static final String EXTRA_ITEM_POSITION = "init-position-data";
     private Contract.Presenter presenter;

@@ -4,6 +4,8 @@ import com.juliedai.android.movietrailers.presentation.view.fragment.thread.Cont
 
 /**
  * @author  Julie Dai
+ * Presenter that controls communication between views and models of the presentation
+ * layer
  */
 
 public class CounterFragmentPresenterImpl implements Contract.Presenter {

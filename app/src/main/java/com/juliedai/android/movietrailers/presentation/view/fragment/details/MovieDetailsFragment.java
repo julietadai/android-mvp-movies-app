@@ -31,6 +31,7 @@ import com.squareup.picasso.Picasso;
 
 /**
  * @author  Julie Dai
+ * Fragment the contains movie's details
  */
 
 public class MovieDetailsFragment extends Fragment implements View.OnClickListener, Contract.View {

@@ -11,9 +11,11 @@ import java.util.List;
 
 /**
  * @author  Julie Dai
+ * Presenter that controls communication between views and models of the presentation
+ * layer.
  */
 
-public class MoviesPresenterImpl implements Contract.Presenter{
+public class MoviesPresenterImpl implements Contract.Presenter {
 
     private static final String LOG_TAG = "_MoviesActivity_";
     private final MoviesInteractor interactor;
@@ -26,13 +28,13 @@ public class MoviesPresenterImpl implements Contract.Presenter{
       loadData();
   }
 
-    private void loadData(){
+    private void loadData() {
       view.showLoading();
       this.interactor.retrieveMovies(new Listener<List<MovieModel>>() {
         @Override
         public void onSuccess(List<MovieModel> movieModels) {
           view.hideLoading();
-          view.loadMovies(movieModels);
+          view.onMoviesLoaded(movieModels);
         }
 
         @Override
@@ -47,7 +49,7 @@ public class MoviesPresenterImpl implements Contract.Presenter{
     public void onMovieClicked(int position) {
       if (interactor.isItemPositionCorrect(position)) {
         view.openMovieDetails(position);
-      }else{
+      }else {
         Log.d(LOG_TAG, "> Presenter > onMovieClicked: Item position incorrect");
       }
     }

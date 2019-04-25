@@ -9,9 +9,11 @@ import java.util.List;
 
 /**
  * @author  Julie Dai
+ * Presenter that controls communication between views and models of the presentation
+ * layer.
  */
 
-public class DetailsPresenterImpl implements Contract.Presenter{
+public class DetailsPresenterImpl implements Contract.Presenter {
     private final DetailsInteractor interactor;
     private final Contract.View view;
 

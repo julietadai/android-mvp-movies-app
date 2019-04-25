@@ -7,6 +7,8 @@ import com.juliedai.android.movietrailers.presentation.view.fragment.details.Con
 
 /**
  * @author  Julie Dai
+ * Presenter that controls communication between views and models of the presentation
+ * layer
  */
 
 public class DetailsFragmentPresenterImpl implements Contract.Presenter {

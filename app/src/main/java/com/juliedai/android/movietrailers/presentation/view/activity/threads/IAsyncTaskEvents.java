@@ -2,6 +2,7 @@ package com.juliedai.android.movietrailers.presentation.view.activity.threads;
 
 /**
  * @author  Julie Dai
+ * Interface for threads events
  */
 
 public interface IAsyncTaskEvents {

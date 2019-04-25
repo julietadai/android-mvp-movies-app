@@ -18,7 +18,7 @@ public interface RestMovieApi {
     String YOUTUBE_BASE_URL = "https://www.youtube.com/watch?v=";
 
     //API key
-    String apiKey = "5284e757b7e46deac3dbee258272aa37"; // f453f49d458a7818caaec0a67158d0ee
+    String apiKey = "f453f49d458a7818caaec0a67158d0ee";
     String keyQuery= "?api_key=" + apiKey;
 
     String POPULAR_MOVIES_PATH = "movie/popular" + keyQuery;

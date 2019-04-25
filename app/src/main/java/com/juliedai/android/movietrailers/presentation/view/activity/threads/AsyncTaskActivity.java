@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 /**
  * @author  Julie Dai
+ * Activity that present AsyncTask performance - create, start and cancel
  */
 
 public class AsyncTaskActivity extends AppCompatActivity implements IAsyncTaskEvents {

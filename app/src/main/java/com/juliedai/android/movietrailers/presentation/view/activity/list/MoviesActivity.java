@@ -26,6 +26,7 @@ import java.util.List;
 
 /**
  * @author  Julie Dai
+ * Activity that contains list of movies with their details
  */
 
 public class MoviesActivity extends AppCompatActivity implements OnMovieClickListener, Contract.View {
@@ -58,7 +59,7 @@ public class MoviesActivity extends AppCompatActivity implements OnMovieClickLis
     }
 
     @Override
-    public void loadMovies(List<MovieModel> movies) {
+    public void onMoviesLoaded(List<MovieModel> movies) {
         // Create adapter and set the movies list into it
         adapter = new MoviesBaseAdapter(appContext, movies, MoviesActivity.this);
         recyclerView.setAdapter(adapter);

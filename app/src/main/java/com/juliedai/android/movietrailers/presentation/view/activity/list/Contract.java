@@ -12,7 +12,7 @@ import java.util.List;
 
 public interface Contract {
     interface View {
-        void loadMovies(List<MovieModel> movies);
+        void onMoviesLoaded(List<MovieModel> movies);
 
         void openMovieDetails(int position);
 
@@ -35,6 +35,5 @@ public interface Contract {
 
         void onMenuReloadClicked();
     }
-
 
 }

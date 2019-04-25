@@ -66,7 +66,7 @@ public class DownloadActivity extends AppCompatActivity implements Contract.View
     }
 
     @Override
-    protected void onStart(){
+    protected void onStart() {
         super.onStart();
         // Register local broadcast
         IntentFilter filter = new IntentFilter(DownloadService.BROADCAST_ACTION);
@@ -74,7 +74,7 @@ public class DownloadActivity extends AppCompatActivity implements Contract.View
     }
 
     @Override
-    protected void onStop(){
+    protected void onStop() {
         // Unregister local broadcast
         LocalBroadcastManager.getInstance(this).unregisterReceiver(broadcastReceiver);
         super.onStop();
@@ -110,7 +110,7 @@ public class DownloadActivity extends AppCompatActivity implements Contract.View
         }
     }
 
-    private void showExplainingRationalDialog(){
+    private void showExplainingRationalDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.download_dialog_title);
         builder.setMessage(R.string.download_dialog_message);

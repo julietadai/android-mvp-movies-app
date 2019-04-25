@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 /**
  * @author  Julie Dai
+ * Activity that present thread performance - create, start and cancel
  */
 
 public class ThreadsActivity extends AppCompatActivity implements IAsyncTaskEvents {
